@@ -1,8 +1,13 @@
 const root = document.getElementById('root');
 
-const headerElement = document.createElement('h1');
+const listElement = document.createElement('ul');
 
-headerElement.innerText = 'Hello'
+const listItemOne = document.createElement('li');
 
-root.append(headerElement)
+listItemOne.innerText = 'list item one';
+
+
+root.append(listElement);
+
+listElement.append(listItemOne)
 
