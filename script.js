@@ -1,13 +1,10 @@
-const root = document.getElementById('root');
+const addItem = () => {
+    let list = document.getElementById('list');
+    let textBox = document.getElementById('textBox');
+    let item = document.createElement('li');
+    list.setAttribute('id', textBox.value);
+    list.appendChild(document.createTextNode(textBox.value));
+    item.appendChild(item);
+}
 
-const listElement = document.createElement('ul');
-
-const listItemOne = document.createElement('li');
-
-listItemOne.innerText = 'list item one';
-
-
-root.append(listElement);
-
-listElement.append(listItemOne)
 
